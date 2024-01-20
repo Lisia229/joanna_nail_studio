@@ -59,7 +59,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -243,8 +242,7 @@ header .social-media li {
 
 section {
   width: 100vw;
-  height: 100vh;
-  padding: 120px;
+  padding: 80px 120px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -295,4 +293,138 @@ section h1 {
 }
 .swiper .swiper-pagination-bullet-active {
   background: var(--color-gray);
+}
+
+.ag-format-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ag-container-shops {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.ag-card-bg {
+  height: 100%;
+  width: 170%;
+  background-position: 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  transition: height 0.6s;
+}
+
+.ag-shop-card_box-wrap {
+  padding: 15px;
+}
+
+.ag-shop-card_box {
+  background-color: #fff;
+  overflow: hidden;
+  -o-box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+  transition: 0.4s;
+}
+
+.ag-shop-card_body {
+  display: block;
+  width: 285px;
+  height: 285px;
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+}
+
+.ag-shop-card-body_link {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  -o-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  transform: translateY(-50%);
+  transition: top 0.4s;
+  padding: 0;
+}
+
+.ag-shop-card-body_img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+}
+.button_container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.button_container .button {
+  width: 100%;
+}
+.button_container .button .button_text {
+  border: 2px solid var(--primary);
+  padding: 2rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--primary);
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.13em;
+  background-color: transparent;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+.button_container .button .button_text:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.small_button_container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.small_button_container .button {
+  width: 100%;
+}
+.small_button_container .button .button_text {
+  border: 2px solid var(--primary);
+  padding: 0.85rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--primary);
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.13em;
+  background-color: transparent;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+.small_button_container .button .button_text:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }/*# sourceMappingURL=style.css.map */
