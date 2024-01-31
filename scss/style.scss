@@ -291,6 +291,15 @@ section {
   }
 }
 
+@include md {
+  section {
+    width: 100vw;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
 .active {
   color: var(--secondary);
   background-color: var(--color-gray);
@@ -501,3 +510,62 @@ section {
   }
 }
 
+// menu ---------------------------------------
+.menu_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 将菜单分散在容器两侧 */
+  align-items: flex-start;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 500;
+  .menu_left,
+  .menu_right {
+    padding: 40px;
+    width: 50%;
+  }
+  .menu_item {
+    display: flex;
+    justify-content: space-between; /* 将菜单分散在容器两侧 */
+    align-items: flex-start;
+    text-align: left;
+  }
+  .price_add {
+    font-size: 0.8em;
+  }
+  .menu_item_price {
+    text-align: right;
+  }
+}
+
+@include md {
+  .menu_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    .menu_left,
+    .menu_right {
+      padding: 40px;
+      width: 100%;
+    }
+  }
+}
+
+.p-t50 {
+  padding-top: 50px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+.nbsp {
+  width: 100%;
+  height: 100px;
+}
+.line {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
