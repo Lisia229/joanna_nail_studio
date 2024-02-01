@@ -321,15 +321,15 @@ header {
       }
     }
     .social-media ul {
-    li {
-      display: inline-block;
-      // text-transform: uppercase;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      font-weight: normal;
-      margin-right: -30px;
+      li {
+        display: inline-block;
+        // text-transform: uppercase;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: normal;
+        margin-right: -30px;
+      }
     }
-  }
   }
 
   .menu {
@@ -367,7 +367,6 @@ header {
       width: 40%;
     }
   }
-  
 }
 @include md {
   .navbar {
@@ -734,6 +733,7 @@ header {
     align-items: flex-start;
     text-align: left;
   }
+
   .price_add {
     font-size: 0.8em;
   }
@@ -744,6 +744,10 @@ header {
 
 .p-t50 {
   padding-top: 50px;
+}
+
+.p-t100 {
+  padding-top: 100px;
 }
 
 .pt-10 {
