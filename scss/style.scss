@@ -29,6 +29,7 @@ $breakpoint-lg: 992px; // 大屏幕（桌面设备）
   --color-light-gray: #d2c6bc;
   --color-red: #480d10;
   --text: #5a5853;
+  --textlight: #5a58538a;
   --border-color: #bfbfbf;
 }
 /* 整個捲軸 */
@@ -267,7 +268,8 @@ li {
   }
 }
 
-section {
+section,
+footer {
   width: 100vw;
   padding: 80px 120px;
   box-sizing: border-box;
@@ -749,6 +751,14 @@ header {
   }
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
 .p-t50 {
   padding-top: 50px;
 }
@@ -818,6 +828,55 @@ header {
     margin: auto;
     .gallery_item {
       width: 50%;
+    }
+  }
+}
+
+// footer
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-light-gray);
+  .footer_logo {
+    width: 100%;
+    text-align: center;
+    svg {
+      width: 20%;
+    }
+  }
+  .footer_menu {
+    width: 100%;
+    text-align: center;
+    a:hover {
+      color: var(--color-red);
+    }
+  }
+  .footer_social {
+    width: 100%;
+    ul {
+      li {
+        display: inline-block;
+        // text-transform: uppercase;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: normal;
+        a:hover {
+          svg {
+            g {
+              fill: var(--color-gray);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_copyright {
+    width: 100%;
+    p {
+      color: var(--textlight);
     }
   }
 }

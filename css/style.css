@@ -14,6 +14,7 @@
   --color-light-gray: #d2c6bc;
   --color-red: #480d10;
   --text: #5a5853;
+  --textlight: #5a58538a;
   --border-color: #bfbfbf;
 }
 
@@ -214,13 +215,15 @@ li {
     transform: translateY(-100%);
   }
 }
-section {
+section,
+footer {
   width: 100vw;
   padding: 80px 120px;
   box-sizing: border-box;
   text-align: center;
 }
-section h1 {
+section h1,
+footer h1 {
   font-family: "Cinzel", serif;
   border: none;
   text-transform: uppercase;
@@ -638,6 +641,14 @@ header .menu a:hover {
   text-align: right;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
 .p-t50 {
   padding-top: 50px;
 }
@@ -704,4 +715,44 @@ header .menu a:hover {
   .gallery .gallery_item {
     width: 50%;
   }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+footer .footer_logo {
+  width: 100%;
+  text-align: center;
+}
+footer .footer_logo svg {
+  width: 20%;
+}
+footer .footer_menu {
+  width: 100%;
+  text-align: center;
+}
+footer .footer_menu a:hover {
+  color: var(--color-red);
+}
+footer .footer_social {
+  width: 100%;
+}
+footer .footer_social ul li {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: normal;
+}
+footer .footer_social ul li a:hover svg g {
+  fill: var(--color-gray);
+}
+footer .footer_copyright {
+  width: 100%;
+}
+footer .footer_copyright p {
+  color: var(--textlight);
 }/*# sourceMappingURL=style.css.map */
