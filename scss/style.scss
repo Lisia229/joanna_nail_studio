@@ -291,7 +291,8 @@ footer {
 }
 
 @include md {
-  section {
+  section,
+  footer {
     width: 100vw;
     padding: 60px 20px;
     box-sizing: border-box;
@@ -877,6 +878,42 @@ footer {
     width: 100%;
     p {
       color: var(--textlight);
+    }
+  }
+}
+
+@include md {
+  footer {
+    .footer_logo {
+      svg {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@include sm {
+  footer {
+    .footer_logo {
+      svg {
+        width: 40%;
+      }
+    }
+    .footer_copyright {
+      width: 100%;
+      p {
+        font-size: 1rem;
+        color: var(--textlight);
+      }
+    }
+    .footer_social {
+      ul {
+        li {
+          display: inline-block;
+          font-size: 0.8rem;
+          line-height: 1rem;
+        }
+      }
     }
   }
 }
