@@ -750,6 +750,34 @@ header {
   .menu_item_price {
     text-align: right;
   }
+  .menu_image {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 33%;
+    }
+  }
+  .menu_gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 将菜单分散在容器两侧 */
+    align-items: flex-start;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 500;
+
+    .menu_gallery_item {
+      width: 33.33%;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
+  }
 }
 
 .pt-20 {
