@@ -328,6 +328,13 @@ header {
         line-height: 1.25rem;
         font-weight: normal;
         margin-right: -30px;
+        a:hover {
+          svg {
+            g {
+              fill: var(--color-gray);
+            }
+          }
+        }
       }
     }
   }
