@@ -780,3 +780,37 @@ header {
 }
 
 // RWD =============================================================
+
+// gallery  =============================================================
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 将菜单分散在容器两侧 */
+  align-items: flex-start;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 500;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  .gallery_item {
+    width: 25%;
+    padding-top: 15px;
+    img {
+      width: 93%;
+      height: 93%;
+    }
+  }
+}
+
+@include md {
+  .gallery {
+    justify-content: space-between;
+    margin: auto;
+    .gallery_item {
+      width: 50%;
+    }
+  }
+}
