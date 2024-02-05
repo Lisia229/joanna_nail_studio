@@ -771,7 +771,19 @@ header {
     font-weight: 500;
 
     .menu_gallery_item {
-      width: 33.33%;
+      width: 50%;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
+  }
+}
+
+@include sm {
+  .menu_gallery {
+    .menu_gallery_item {
+      width: 100%;
       img {
         width: 95%;
         height: 95%;
